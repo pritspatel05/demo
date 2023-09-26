@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+     *{
+        margin: 0;
+        padding: 0;
+     }
+     html,body{
+        height:100%;
+             }
+      div{
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:black;
+     }
+     div ul
+     {
+       display: flex;
+       list-style: none;
+       border-bottom: 5px solid white;
+     }
+     div ul li{
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        margin-right: 10px;
+        border-radius: 50%;
+        animation:tc3 3s linear infinite;
+     }
+     @keyframes tc3 
+     {
+        0%{transform:translateY(0);}
+        50%{transform:translateY(-150px);}
+        100%{transform:translateY(0);}
+     }
+     ul li:nth-child(1)
+     {
+        background-color: yellow;
+        animation-delay: 2.0s;
+     }
+     ul li:nth-child(2)
+     {
+        background-color: green;
+        animation-delay: 1.6s;
+     }
+     ul li:nth-child(3)
+     {
+        background-color: blue;
+        animation-delay: 1.2s;
+     }
+     ul li:nth-child(4)
+     {
+        background-color: aqua;
+        animation-delay: 0.8s;
+     }
+     ul li:nth-child(1)
+     {
+        background-color:darkmagenta;
+        animation-delay: 0.4s;
+     }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
